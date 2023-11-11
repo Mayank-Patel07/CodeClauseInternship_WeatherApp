@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./Images/pexels-brett-sayles-1431822.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    background-image: url("./Images/clouds-2329680_1920.jpg");
+    width: 90%;
+    max-width: 470px;
+    color: white;
+    opacity: 0.8;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+::placeholder {
+    color: white;
+}
+
+.button-effect {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.button-effect:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-effect:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.search-box input {
+    border: 0;
+    outline: 0;
+    background-color: rgb(126, 126, 226);
+    color: white;
+    padding: 10px 25px;
+    height: 60px;
+    font-size: 15px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.search-box button {
+    border: 0;
+    outline: 0;
+    background-color: rgb(126, 126, 226);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+.search-box button img {
+    width: 16px;
+}
+
+.Icons {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather-box h1 {
+    font-size: 80px;
+    font-weight: 500;
+
+}
+
+.weather-box h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.cityInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.column img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity .WindSpeed {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.invalid {
+    display: none;
+    margin-top: 13px;
+}
+
+@media screen and (max-width: 400px) {
+    .search-box button {
+        height: 48px;
+        width: 60px;
+    }
+
+    .search-box {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .button-effect {
+        margin-top: 15px;
+    }
+
+    .search-box input {
+        margin: 0;
+    }
+
+    .cityInfo {
+        justify-content: center;
+    }
+
+}
